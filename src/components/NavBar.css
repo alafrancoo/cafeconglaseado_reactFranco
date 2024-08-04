@@ -1,0 +1,14 @@
+.NavBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    background-color: #9B7D61; 
+    padding: 10px 20px; 
+    color: #fff;
+    display: flex;
+    gap: 15px;
+    .Logo{
+        height: 40px;
+        display: block;
+    }
+}

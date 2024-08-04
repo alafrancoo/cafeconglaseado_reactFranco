@@ -1,0 +1,19 @@
+
+
+.buttonNav {
+    display: flex;
+    gap: 15px;
+    background: none; 
+    color: #FED8A6; 
+    border: none; 
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    font-weight: bold;
+    outline: none;
+    &:hover {
+        background-color: #92ADA4;
+        color: #fff;
+    }
+}
