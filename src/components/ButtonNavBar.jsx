@@ -1,16 +1,13 @@
 /* eslint-disable react/prop-types */
 import './ButtonNavBar.css'
+import { Link } from 'react-router-dom';
 
-export default function ButtonNavBar({nombre}){
-    const handleClick = () => {
-        alert(`Dirigiendote a ${nombre}`);
-      };
-
+export default function ButtonNavBar({nombre, destino}){
     return (
         <>
-        <button className='buttonNav' onClick={handleClick} >
+        <Link to={destino} className='buttonNav'>
             {nombre}
-        </button>
+        </Link>
         </>
     )
 }

@@ -1,16 +1,19 @@
 /* eslint-disable react/prop-types */
 import './NavBar.css';
-import ButtonNavBar from './ButtonNavBar'
+import ButtonNavBar from './ButtonNavBar';
 import CartWidget from './CartWidget';
+import { Link } from 'react-router-dom';
 
 const NavBar = ({ itemCount, onCartClick }) => {
     return (
         <nav className='NavBar'>
-            <a href="#"><img src='./src/assets/donaLogo.jpg' alt='Inicio' className='Logo'/></a>
-            <ButtonNavBar destino='#' nombre='Inicio'/>
-            <ButtonNavBar destino='' nombre='Delivery'/>
-            <ButtonNavBar destino='' nombre='Menu'/>
-            <ButtonNavBar destino='' nombre='Contacto'/>
+            <Link to="/">
+                <img src='./src/assets/donaLogo.jpg' alt='Inicio' className='Logo'/>
+            </Link>
+            <ButtonNavBar destino='/' nombre='Inicio'/>
+            <ButtonNavBar destino='/delivery' nombre='Delivery'/>
+            <ButtonNavBar destino='/menu' nombre='Menu'/>
+            <ButtonNavBar destino='/contacto' nombre='Contacto'/>
             <CartWidget itemCount={itemCount} onClick={onCartClick} />
         </nav>
     );

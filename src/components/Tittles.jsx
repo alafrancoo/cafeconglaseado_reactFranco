@@ -1,14 +1,15 @@
 /* eslint-disable react/prop-types */
-import './Tittles.css'
 
-export default function Tittle({titulo, color}){
+export default function Tittle(props){
     const estiloTittle = {
-        color: color,
+        color: props.color,
+        textAlign: 'center',
+        fontSize: '3rem'
     };
 
     return(
         <>
-        <h1 className='MainTittle' style={estiloTittle}>{titulo}</h1>
+            <h1 className='MainTittle' style={estiloTittle}>{props.titulo}</h1>
         </>
     )
 }

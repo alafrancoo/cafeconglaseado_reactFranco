@@ -12,6 +12,7 @@
     transition: background-color 0.3s, color 0.3s;
     font-weight: bold;
     outline: none;
+    text-decoration: none;
     &:hover {
         background-color: #92ADA4;
         color: #fff;

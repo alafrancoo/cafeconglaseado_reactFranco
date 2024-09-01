@@ -1,0 +1,41 @@
+.products-card {
+    background-color: #E9D7C0; 
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 10px;
+  }
+  
+  .product-image {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+  
+  .product-price {
+    font-size: 1.2em;
+    color: #DAA38F; /* Color del precio */
+    margin: 10px 0;
+  }
+  
+  .currency {
+    font-size: 0.8em;
+    color: #9B7D61; /* Color de la moneda */
+  }
+  
+  .view-details-button {
+    background-color: #92ADA4; /* Color del botón */
+    color: #FED8A6; /* Color del texto del botón */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .view-details-button:hover {
+    background-color: #DAA38F; /* Color de fondo al pasar el ratón */
+    color: #FED8A6; /* Color del texto al pasar el ratón */
+  }
+  
